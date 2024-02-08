@@ -47,9 +47,13 @@ def process_string(ls):
         res.append(f'{el}')
     return res
 
-if __name__=='__main__':
+#if __name__=='__main__':
+def main(page_name):
     host= "https://data.ademe.fr"
-    path = "/data-fair/api/v1/datasets/agribalyse-31-detail-par-ingredient"
+    #path = "/data-fair/api/v1/datasets/agribalyse-31-detail-par-ingredient"
+    #path = "/data-fair/api/v1/datasets/agribalyse-31-detail-par-etape"
+    #path = "/data-fair/api/v1/datasets/agribalyse-31-synthese"
+    path = "/data-fair/api/v1/datasets/" + page_name
     title_res = init_requete(host+path, {"html" : "true"})
     # 初始化基本信息, 用来组合后一步链接
     json_data = json.loads(title_res)
@@ -79,4 +83,4 @@ if __name__=='__main__':
             res.append(row)
         random_sleep()
     print("finish crabing")
-    store_data("my-csv.csv", form_title, res)
+    store_data(page_name + ".csv", form_title, res)
