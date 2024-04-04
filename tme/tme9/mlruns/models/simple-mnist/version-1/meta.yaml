@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1712238316288
+current_stage: None
+description: ''
+last_updated_timestamp: 1712238316288
+name: simple-mnist
+run_id: 440f2acdb1c044e1ae52512bf5ef1019
+run_link: ''
+source: file:///c:/Users/Saliou/OneDrive/Documents/ALL%20TP/DALAS/tme/tme9/mlruns/992820098298185496/440f2acdb1c044e1ae52512bf5ef1019/artifacts/mnist_model
+status: READY
+status_message: null
+storage_location: file:///c:/Users/Saliou/OneDrive/Documents/ALL%20TP/DALAS/tme/tme9/mlruns/992820098298185496/440f2acdb1c044e1ae52512bf5ef1019/artifacts/mnist_model
+user_id: null
+version: 1
